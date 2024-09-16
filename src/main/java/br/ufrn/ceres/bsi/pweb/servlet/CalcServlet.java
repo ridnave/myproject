@@ -1,3 +1,4 @@
+
 package br.ufrn.ceres.bsi.pweb.servlet;
 
 import java.io.IOException;
@@ -40,6 +41,7 @@ public class CalcServlet extends HttpServlet {
      */
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+
         //Definir o Tipo do Conteúdo response para HTML
         response.setContentType("text/html");
         response.setCharacterEncoding("UTF-8");
@@ -49,6 +51,7 @@ public class CalcServlet extends HttpServlet {
         
         response.getWriter().append("Esse foi o número digitado: " + number);
         response.getWriter().append("<br>Esse foi o nome digitado: " + nome);
+
         response.getWriter().append("<br>");
 
         doGet(request, response);
